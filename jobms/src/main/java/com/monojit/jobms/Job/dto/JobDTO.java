@@ -1,10 +1,11 @@
 package com.monojit.jobms.Job.dto;
 
-import com.monojit.jobms.Job.Job;
 import com.monojit.jobms.Job.external.Company;
 import com.monojit.jobms.Job.external.Review;
 
-public class JobWithCompanyDTO {
+import java.util.List;
+
+public class JobDTO {
     private Long id;
     private String title;
     private String description;
@@ -12,7 +13,7 @@ public class JobWithCompanyDTO {
     private String maxSalary;
     private String location;
     private Company company;
-    private Review review;
+    private List<Review> reviews;
     public Long getId() {
         return id;
     }
@@ -67,5 +68,13 @@ public class JobWithCompanyDTO {
 
     public void setCompany(Company company) {
         this.company = company;
+    }
+
+    public List<Review> getReviews() {
+        return reviews;
+    }
+
+    public void setReviews(List<Review> reviews) {
+        this.reviews = reviews;
     }
 }

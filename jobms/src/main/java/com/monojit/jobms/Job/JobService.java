@@ -1,12 +1,14 @@
 package com.monojit.jobms.Job;
 
+import com.monojit.jobms.Job.dto.JobDTO;
+
 import java.util.List;
 
 public interface JobService {
-    List<Job> findAll();
+    List<JobDTO> findAll();
     void createJob(Job job);
 
-    Job getJobById(Long id);
+    JobDTO getJobById(Long id);
 
     Boolean removeJob(Long id);
 

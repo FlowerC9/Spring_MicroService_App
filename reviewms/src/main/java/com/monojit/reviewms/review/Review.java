@@ -1,6 +1,5 @@
 package com.monojit.reviewms.review;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 @Entity
